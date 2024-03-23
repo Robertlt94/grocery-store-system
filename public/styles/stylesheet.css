@@ -3,27 +3,54 @@ body {
     padding: 0;
 }
 
-header nav {
+header {
     top: 0;
-    background-color: rgba(0, 164, 19, 0.84);
+    background-color: #fff;
     width: 100%;
-    padding: 10px;
-    font-size: 5em;
+    margin: auto;
+}
+
+header div a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+header div a img {
+    display: block;
+    width: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header div a h3 {
+    display: block;
+    text-decoration: none;
+    margin: 5px;
+    text-align: center;
+    color: #000;
+    font-size: 3em;
+
+}
+
+header nav {
+    /* border-top: 5px solid #000;
+    border-bottom: 5px solid #000; */
+    display: flex;
+    padding: 1em;
 }
 
 header nav a {
-    display: flex;
-    justify-content: flex-start;
+    font-size: 2em;
     text-decoration: none;
-    background-color: transparent;
-    margin: 5px;
-    text-align: center;
-    color: #fff;
+    display: flex;
+    height: 100%;
+    margin: auto;
+    color: #000000;
+    padding: 10px 20px;
+    border-bottom: solid 3px #ffffff;
 }
 
-header nav img {
-    justify-content: flex-start;
-    width: 5vw;
-    border-radius: 50px;
-    border-color: black;
+header nav a:hover {
+    border-bottom: solid 3px #000;
 }
