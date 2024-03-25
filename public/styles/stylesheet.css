@@ -61,17 +61,23 @@ header {
 }
 
 main {
-    height: 80vh;
+    height: 100%;
+    background-color: rgb(213, 255, 195);
+    padding: 0;
+    margin: 0;
 }
 
-form {
-    display: flex;
+main section h2 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
-/* #route-description {
-    
-} */
-
+main section h3 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
 
 .add-to-inventory-btn {
     display: flex;
@@ -94,9 +100,12 @@ footer div {
     background-color: rgba(0, 0, 0, 0.792);
     color: #fff;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 footer div h2 {
+    margin: 0;
     padding-top: 20px;
 }
 
