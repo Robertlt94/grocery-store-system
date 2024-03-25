@@ -8,55 +8,61 @@
     <link rel="stylesheet" href="./styles/stylesheet.css">
 <body>
     <header>
-        <div>
-            <a href="landing-page">
-                <img src="../images/htg-grocery-logo.png" alt="">
-                <h3>GroLocal Mart</h3>
-            </a>
+        <div id="logo-container">
+            <div>
+                <img src="./images/htg-grocery-logo.png" alt="logo containing a bag of grocery with a sign saying fresh sticking out of it" id="header-logo">
+                <h1>Welcome to <span>GroLocal!</span></h1>
+                <p><b>Local. Organic. Friendly.</b></p>
+            </div>
         </div>
-        <nav><a href="about-us">About Us</a><a href="inventory">Inventory</a><a href="shopping-list">Favorites</a><a href="checkout">Checkout</a></nav>
+        <div id="nav-container">
+            <nav><a href="#" class="nav-options">Home</a><a href="#" class="nav-options">About Us</a><a href="#" class="nav-options">Inventory</a><a href="#" class="nav-options">Favorites</a><a href="#" class="nav-options">Checkout</a></nav>
+        </div>
     </header>
     <main>
         <section>
-            <img src="" alt="">
-        </section>
-        <section>
             <h2>Inventory:</h2>
             <div>
-                <form action="">
-                    <fieldset>
-                        <legend><h3>Add A New Product:</h3></legend>
-                        <label for="product-name-input">Product Name:</label>
-                        <input type="text" name="product-name-input" id="product-name-input">
-                        <label for="product-quantity-input">Quanity:</label>
-                        <input type="number" name="product-quantity-input" id="product-quantity-input">
-                        <label for="product-price-input">Price:</label>
-                        <input type="text" name="product-price-input" id="product-price-input">
-                        <p>Product Department:</p>
-                        <label for="product-category-radio">
-                            <input type="radio" name="product-category-radio" value="Fruit">Fruit
-                        </label>
-                        <label for="product-category-radio"></label>
-                            <input type="radio" name="product-category-radio" value="Vegetable">Vegetable
-                        </label>
-                        <label for="product-category-radio"></label>
-                            <input type="radio" name="product-category-radio" value="Meat">Meat
-                        </label>
-                        <label for="product-category-radio"></label>
-                            <input type="radio" name="product-category-radio" value="Frozen">Frozen
-                        </label>
-                        <label for="product-category-radio">
-                            <input type="radio" name="product-category-radio" value="Miscellaneous">Miscellaneous
-                        </label>
-                    </fieldset>
-                    <button type="submit">Submit</button>
-                </form>
+                <div>
+                <fieldset>
+                    <legend><h3>Add A New Product:</h3></legend>
+                    <label for="product-name-input">Product Name:</label>
+                    <input type="text" name="product-name-input" id="product-name-input">
+                    <label for="product-quantity-input">Quanity:</label>
+                    <input type="number" name="product-quantity-input" id="product-quantity-input">
+                    <label for="product-price-input">Price:</label>
+                    <input type="price" name="product-price-input" id="product-price-input">
+                    <label for="product-inventory-alert"">Inventory Alert:</label>
+                    <input type="number" name="product-inventory-alert" id="product-inventory-alert">
+                    <p>Product Department:</p>
+                    <label for="product-category-radio">
+                        <input type="radio" name="product-category-radio" id="fruit" value="Fruit">Fruit
+                    </label>
+                    <label for="product-category-radio"></label>
+                        <input type="radio" name="product-category-radio" id="vegetable" value="Vegetable">Vegetable
+                    </label>
+                    <label for="product-category-radio"></label>
+                        <input type="radio" name="product-category-radio" id="meat" value="Meat">Meat
+                    </label>
+                    <label for="product-category-radio"></label>
+                        <input type="radio" name="product-category-radio" id="frozen" value="Frozen">Frozen
+                    </label>
+                    <label for="product-category-radio">
+                        <input type="radio" name="product-category-radio" id="miscellaneous" value="Miscellaneous">Miscellaneous
+                    </label><br>
+                    <button id="add-to-inventory-btn">Add To Inventory</button>
+                </fieldset>
+                </div>
             </div>
             <div>
-                <h3>Current Products:</h3>
-                <ul>
-
-                </ul>
+                <div>
+                <h3 class="route-description">Alert! These are running low:</h3>
+                <ul id="needs-attention"></ul>
+                </div>
+                <div>
+                <h3 class="route-description">Inventory:</h3>
+                <ul id="store-inventory"></ul>
+                </div>
             </div>
         </section>
         <section>
@@ -64,7 +70,15 @@
         </section>
     </main>
     <footer>
-
+        <div>
+            <h2>Questions, Concerns, and Feedback?</h2>
+            <h3>Let us know!</h3>
+            <ul>
+                <li>Phone: (651)702-1761</li>
+                <li>Email: we.listen@grolocal.org</li>
+                <li>fax: 1-907-555-1234</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
